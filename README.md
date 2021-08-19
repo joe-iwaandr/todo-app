@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Todo App Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Goal
 
-## Available Scripts
+The goal of this project is to build an "To Do" app! Success generally looks like:
 
-In the project directory, you can run:
+1. Write an app where a user create and manage "to do"s in a list
+1. Write tests for the major use cases of the app
 
-### `yarn start`
+## Starting Point
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is basically just a [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) starter. Most of the default files were left in place to give examples of how the different pieces (styles, tests, etc) are connected. But if random code looks out of place for the project, it is probably a relic of the project set up and may not be important - feel free to change anything.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Specific Rubric
 
-### `yarn test`
+### Acceptance Criteria
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here are the details for the major goals, and what the rubric for completion is:
 
-### `yarn build`
+1. A user can create and manage "To dos" to a list. In other words, a user can:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - type anything into a text input
+   - "submit" that "to do" via a button
+   - view all of their "to do"s in a list that should update as soon as it is submitted
+   - delete existing "to do"s
+   - edit existing "to do"s
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Write tests for use cases of the app. The tests should:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - be modular and test a single use case
+   - cover all important use cases of the app
 
-### `yarn eject`
+### Other Important Things
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+While the goal of this project is to see how you go about building an app that runs as expected, there are some soft considerations you would expect to see in any codebase out in the wild. Things like code structure, code comments, variable names, and anything else that makes it human friendly code. There aren't any solid requirements, just a note that it's always nice to read code that's written for humans!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Things that _are not_ important
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+There are things not to worry about:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Styles don't matter here. They do for a real app, but styling is a time sink that isn't super important. The UI should be usable to make sure intent is clear, but don't worry about making it look any nicer than necessary!
+- Performance. The app is simple enough that there shouldn't be any real noticeable lag, but at the same time, don't worry about optimizing code for performance. General approach and human-friendliness is much more important!
 
-## Learn More
+## Helpful Resources
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For the React side of things, the best source is the [React documentation](https://reactjs.org/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For writing tests, Kent C. Dodds is the expert and has [lots of resources](https://kentcdodds.com/testing/)! The tests should also use Testing Library, which has [good documentation](https://testing-library.com/).
+
+## Running the app
+
+To run the app, make sure to:
+
+- Run `npm install` in this directory to install dependencies
+- Run `npm run start` to start the app. It should handle hot reloading and be ready to go!
+
+## Running tests
+
+Here, assuming you've already installed dependencies via `npm install`, all you need to do is `npm run test`!
